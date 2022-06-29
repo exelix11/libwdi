@@ -1,6 +1,7 @@
 name: VS2022
 
 on: 
+  workflow_dispatch:
   push:
     paths-ignore:
       - '.gitignore'
@@ -19,6 +20,7 @@ on:
       - 'AUTHORS'
       - 'NEWS'
       - 'ChangeLog'
+    
 
 env:
   WDK_URL: https://go.microsoft.com/fwlink/p/?LinkID=253170
